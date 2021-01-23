@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		44A36EDC25BBC04B0005968B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44A36EDB25BBC04B0005968B /* Assets.xcassets */; };
 		44A36EDF25BBC04B0005968B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44A36EDE25BBC04B0005968B /* Preview Assets.xcassets */; };
 		44A36EE225BBC04B0005968B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44A36EE025BBC04B0005968B /* LaunchScreen.storyboard */; };
+		B368C0ECB2F19FDF47212D84 /* Pods_kitchenaire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE7F6157350CE038DCE5F037 /* Pods_kitchenaire.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		44A36EDE25BBC04B0005968B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		44A36EE125BBC04B0005968B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44A36EE325BBC04B0005968B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9285D2BEF6F82C92B45C722 /* Pods-kitchenaire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kitchenaire.release.xcconfig"; path = "Target Support Files/Pods-kitchenaire/Pods-kitchenaire.release.xcconfig"; sourceTree = "<group>"; };
+		BE7F6157350CE038DCE5F037 /* Pods_kitchenaire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kitchenaire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE05BCB4F413B4A2D4055DAE /* Pods-kitchenaire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kitchenaire.debug.xcconfig"; path = "Target Support Files/Pods-kitchenaire/Pods-kitchenaire.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B368C0ECB2F19FDF47212D84 /* Pods_kitchenaire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				44A36ED425BBC0470005968B /* kitchenaire */,
 				44A36ED325BBC0470005968B /* Products */,
+				C696AF4252B60ECB3937D313 /* Pods */,
+				CE92E2BB7CFBB98F26DCE901 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +82,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		C696AF4252B60ECB3937D313 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE05BCB4F413B4A2D4055DAE /* Pods-kitchenaire.debug.xcconfig */,
+				B9285D2BEF6F82C92B45C722 /* Pods-kitchenaire.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CE92E2BB7CFBB98F26DCE901 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE7F6157350CE038DCE5F037 /* Pods_kitchenaire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +106,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44A36EE625BBC04B0005968B /* Build configuration list for PBXNativeTarget "kitchenaire" */;
 			buildPhases = (
+				54DEB8A166A5BF82FD574535 /* [CP] Check Pods Manifest.lock */,
 				44A36ECE25BBC0470005968B /* Sources */,
 				44A36ECF25BBC0470005968B /* Frameworks */,
 				44A36ED025BBC0470005968B /* Resources */,
+				ACB7AC412E9D8DFBCF525A23 /* [CP] Embed Pods Frameworks */,
+				5EF3AEB1DBB5EC8AC7126C73 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -139,6 +166,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		54DEB8A166A5BF82FD574535 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kitchenaire-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5EF3AEB1DBB5EC8AC7126C73 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kitchenaire/Pods-kitchenaire-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kitchenaire/Pods-kitchenaire-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kitchenaire/Pods-kitchenaire-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACB7AC412E9D8DFBCF525A23 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kitchenaire/Pods-kitchenaire-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kitchenaire/Pods-kitchenaire-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kitchenaire/Pods-kitchenaire-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		44A36ECE25BBC0470005968B /* Sources */ = {
@@ -200,6 +286,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -216,7 +303,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -261,6 +348,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -271,7 +359,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -283,19 +371,21 @@
 		};
 		44A36EE725BBC04B0005968B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE05BCB4F413B4A2D4055DAE /* Pods-kitchenaire.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"kitchenaire/Preview Content\"";
 				DEVELOPMENT_TEAM = KX5MJRC3CG;
+				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = kitchenaire/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.etchbhatia.kitchenaire;
+				PRODUCT_BUNDLE_IDENTIFIER = com.etchbhatia.k;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -304,19 +394,21 @@
 		};
 		44A36EE825BBC04B0005968B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9285D2BEF6F82C92B45C722 /* Pods-kitchenaire.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"kitchenaire/Preview Content\"";
 				DEVELOPMENT_TEAM = KX5MJRC3CG;
+				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = kitchenaire/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.etchbhatia.kitchenaire;
+				PRODUCT_BUNDLE_IDENTIFIER = com.etchbhatia.k;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
