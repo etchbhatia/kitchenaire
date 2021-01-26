@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Grilled Cheese Sandwich",
+    "id": 1,
+    "imageName": "grilled"
+  },
+  {
+    "name": "Instant Coffee",
+    "id": 2,
+    "imageName": "coffee"
+  },
+  {
+    "name": "Open Egg Sandwich",
+    "id": 3,
+    "imageName": "egg_sandwich"
+  },
+  {
+    "name": "Indian Chai Tea",
+    "id": 4,
+    "imageName": "tea"
+  },
+  {
+    "name": "Chicken Noodle Soup",
+    "id": 5,
+    "imageName": "soup"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "step": 1,
+    "text": "BREAD",
+    "id": 1,
+    "imageName": "bread"
+  },
+  {
+    "step": 2,
+    "text": "CHEESE"
+    "id": 1,
+    "imageName": "cheese"
+  },
+  {
+    "step": 3,
+    "text": "PAN/COOKTOP"
+    "id": 1,
+    "imageName": "pan"
+  }
+]
