@@ -26,34 +26,10 @@ private func processJSONData<T: Decodable>(filename: String) -> T {
   do {
     let decoder = JSONDecoder()
     return try decoder.decode(T.self, from: data)
-    
-    // return try decoder.decode(DecodedArray<Student>.self, from: jsonData)
-//     return try decoder.decode(ItemArray<Item>.self, from: data)
-  
   } catch {
     fatalError("Couldn't parse \(filename) as \(T.self):\n\(error)")
   }
 }
-
-/*
-struct ServerResponse: Decodable {
-  var id: String
-  var username: String
-  var fullName: String
-  var reviewCount: Int
-
-  init(from decoder: Decoder) throws {
-    let rawResponse = try RawServerResponse(from: decoder)
-
-    // Now you can pick items that are important to your data model,
-    // conveniently decoded into a Swift structure
-    id = String(rawResponse.id)
-    username = rawResponse.user.user_name
-    fullName = rawResponse.user.real_info.full_name
-    reviewCount = rawResponse.reviews_count.first!.count
-  }
-}
-*/
 
 final class RecipeImageStore {
   typealias _ImageDictionary = [String: CGImage]

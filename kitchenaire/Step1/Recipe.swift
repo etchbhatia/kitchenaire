@@ -22,9 +22,8 @@ struct Recipe: Decodable, Hashable, Identifiable {
 struct Recipe: Decodable, Hashable, Identifiable {
     var id: Int
     var name, imageName: String
-    var itemsCount, instructionsCount: Int
-    var items: [Item]
-    var instructions: [Instruction]
+    var items: [Item]?
+    var instructions: [Instruction]?
 
 
     // MARK: - Item
@@ -51,14 +50,15 @@ extension Recipe {
 }
 
 
-/*
-extension Iitems {
+
+extension Recipe.Item {
     var image: Image {
         RecipeImageStore.shared.image(name: imageName)
     }
 }
 
-extension Iitems {
+
+extension Recipe.Item {
     var locate: String {
         get {
             switch category {
@@ -75,7 +75,7 @@ extension Iitems {
     }
 }
 
-
+/*
 struct ItemArray: Decodable {
     var array: [Item]
 }

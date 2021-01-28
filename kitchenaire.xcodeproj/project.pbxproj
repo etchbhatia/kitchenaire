@@ -13,9 +13,9 @@
 		447AEE3425C11469007AB4B4 /* ItemsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447AEE3325C11469007AB4B4 /* ItemsAPI.swift */; };
 		447AEE5A25C1DAF6007AB4B4 /* RecipeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447AEE5925C1DAF6007AB4B4 /* RecipeButton.swift */; };
 		447AEE5D25C22A47007AB4B4 /* recipesDB.json in Resources */ = {isa = PBXBuildFile; fileRef = 447AEE5C25C22A47007AB4B4 /* recipesDB.json */; };
+		447AEE7425C36508007AB4B4 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447AEE7325C36508007AB4B4 /* ItemView.swift */; };
 		44826AA725BE540600F1A7F9 /* FocusARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44826AA625BE540600F1A7F9 /* FocusARView.swift */; };
 		44826AAA25BE558300F1A7F9 /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44826AA925BE558300F1A7F9 /* ControlView.swift */; };
-		44869C0525BEA5B600E0C42D /* ItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44869C0425BEA5B600E0C42D /* ItemsView.swift */; };
 		44869C0825BEAEC300E0C42D /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44869C0725BEAEC300E0C42D /* RecipeView.swift */; };
 		44869C1125BF9B7900E0C42D /* recipeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 44869C1025BF9B7900E0C42D /* recipeData.json */; };
 		44869C1725BF9CB800E0C42D /* grilled.png in Resources */ = {isa = PBXBuildFile; fileRef = 44869C1625BF9CB700E0C42D /* grilled.png */; };
@@ -46,9 +46,9 @@
 		447AEE3325C11469007AB4B4 /* ItemsAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsAPI.swift; sourceTree = "<group>"; };
 		447AEE5925C1DAF6007AB4B4 /* RecipeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeButton.swift; sourceTree = "<group>"; };
 		447AEE5C25C22A47007AB4B4 /* recipesDB.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = recipesDB.json; sourceTree = "<group>"; };
+		447AEE7325C36508007AB4B4 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
 		44826AA625BE540600F1A7F9 /* FocusARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusARView.swift; sourceTree = "<group>"; };
 		44826AA925BE558300F1A7F9 /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
-		44869C0425BEA5B600E0C42D /* ItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsView.swift; sourceTree = "<group>"; };
 		44869C0725BEAEC300E0C42D /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
 		44869C1025BF9B7900E0C42D /* recipeData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = recipeData.json; sourceTree = "<group>"; };
 		44869C1625BF9CB700E0C42D /* grilled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grilled.png; sourceTree = "<group>"; };
@@ -103,6 +103,7 @@
 				447AEE5925C1DAF6007AB4B4 /* RecipeButton.swift */,
 				447AEE5C25C22A47007AB4B4 /* recipesDB.json */,
 				44869C2A25BFA1AF00E0C42D /* RecipeListView.swift */,
+				447AEE7325C36508007AB4B4 /* ItemView.swift */,
 			);
 			path = Step1;
 			sourceTree = "<group>";
@@ -110,7 +111,6 @@
 		44869C1425BF9C1800E0C42D /* Step2 */ = {
 			isa = PBXGroup;
 			children = (
-				44869C0425BEA5B600E0C42D /* ItemsView.swift */,
 				447AEE3325C11469007AB4B4 /* ItemsAPI.swift */,
 				446B944425C0B664005B5ADC /* Items.swift */,
 				446B944125C0B5F1005B5ADC /* ItemsRow.swift */,
@@ -344,11 +344,11 @@
 				44869C0825BEAEC300E0C42D /* RecipeView.swift in Sources */,
 				44869C2E25BFA24F00E0C42D /* RecipeAPI.swift in Sources */,
 				44A36EDA25BBC0470005968B /* Experience.rcproject in Sources */,
-				44869C0525BEA5B600E0C42D /* ItemsView.swift in Sources */,
 				446B943F25C0B573005B5ADC /* ItemsListView.swift in Sources */,
 				44869C2B25BFA1AF00E0C42D /* RecipeListView.swift in Sources */,
 				44826AAA25BE558300F1A7F9 /* ControlView.swift in Sources */,
 				447AEE3425C11469007AB4B4 /* ItemsAPI.swift in Sources */,
+				447AEE7425C36508007AB4B4 /* ItemView.swift in Sources */,
 				44869C3A25BFA74200E0C42D /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

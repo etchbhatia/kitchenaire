@@ -16,16 +16,22 @@ struct RecipeListView: View {
             List(recipeItems) { recipe in
                 RecipeButton(recipe: recipe) {
                     print("Recipe \(recipe.id) pressed.")
-                    for item in recipe.items {
-                        print("Look for \(item.name) in the \(item.category)")
+                    for item in recipe.items ?? [Recipe.Item]() {
+                        print("Look for \(item.name) in the \(item.locate)")
                         }
-                    for instruction in recipe.instructions {
-                        print("\(instruction.text)")
+                    for i in recipe.instructions ?? [Recipe.Instruction]() {
+                        print("\(i.text)")
                         }
                     self.showItems.toggle()
+                }
+                /*
                 }.sheet(isPresented: $showItems, content: {
-                    ItemsListView(showItems:$showItems)
-                }) // TODO: debug this
+                    ItemView(showItems: $showItems, item: recipe.items![0])
+                })
+                 */
+//                }.sheet(isPresented: $showItems, content: {
+//                    ItemsListView(showItems:$showItems)
+//                }) // TODO: debug this
                 
             }
             .navigationBarTitle(Text("Select a Recipe"), displayMode: .large)
