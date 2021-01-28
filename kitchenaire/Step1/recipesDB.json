@@ -1,0 +1,56 @@
+[
+    {
+      "id": 1,
+      "name": "Grilled Cheese Sandwich",
+      "imageName": "grilled",
+      "itemsCount": 3,
+      "instructionsCount": 5,
+      "items": [
+        {
+          "name": "BREAD",
+          "category": 0,
+          "imageName": "bread",
+          "registered": false
+        },
+        {
+          "name": "CHEESE",
+          "category": 0,
+          "imageName": "slice_cheese",
+          "registered": false
+        },
+        {
+          "name": "PAN",
+          "category": 1,
+          "imageName": "pan",
+          "registered": false
+        }
+      ],
+      "instructions": [
+        {
+          "text": "Take 2 slices of bread",
+          "category": 0,
+          "imageName": "bread"
+        },
+        {
+          "text": "Warm the pan and put butter",
+          "category": 1,
+          "imageName": "pan"
+        },
+        {
+          "text": "Put 2 slices of cheese on bread",
+          "category": 0,
+          "imageName": "slice_cheese"
+        },
+        {
+          "text": "Grill the bread on the warm pan, 3 minutes each side",
+          "category": 1,
+          "imageName": "pan"
+        },
+        {
+          "text": "Your sandwich is ready",
+          "category": 1,
+          "imageName": "grilled"
+        }
+      ]
+    }
+]

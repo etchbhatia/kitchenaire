@@ -9,13 +9,26 @@ import SwiftUI
 
 struct RecipeListView: View {
     @Binding var showRecipes: Bool
+    @Binding var showItems: Bool
     
     var body: some View {
         NavigationView {
             List(recipeItems) { recipe in
-                RecipeRow(recipe: recipe)
+                RecipeButton(recipe: recipe) {
+                    print("Recipe \(recipe.id) pressed.")
+                    for item in recipe.items {
+                        print("Look for \(item.name) in the \(item.category)")
+                        }
+                    for instruction in recipe.instructions {
+                        print("\(instruction.text)")
+                        }
+                    self.showItems.toggle()
+                }.sheet(isPresented: $showItems, content: {
+                    ItemsListView(showItems:$showItems)
+                }) // TODO: debug this
+                
             }
-            .navigationBarTitle(Text("Browse Recipes"), displayMode: .large)
+            .navigationBarTitle(Text("Select a Recipe"), displayMode: .large)
             .navigationBarItems(trailing:
                                     Button(action: {
                                         self.showRecipes.toggle()

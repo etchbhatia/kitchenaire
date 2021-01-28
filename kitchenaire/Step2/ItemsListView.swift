@@ -1,5 +1,5 @@
 //
-//  ItemsView.swift
+//  ItemsListView.swift
 //  kitchenaire
 //
 //  Created by Harpreet Bhatia on 1/24/21.
@@ -7,15 +7,16 @@
 
 import SwiftUI
 
-struct ItemsView: View {
+struct ItemsListView: View {
     @Binding var showItems: Bool
+//    let models = Models()
     
     var body: some View {
         NavigationView {
-            ScrollView(showsIndicators: false) {
-                // Gridview for thumbnails
+            List(ItemsDB) { items in
+                 ItemsRow(items: items)
             }
-            .navigationBarTitle(Text("Browse"), displayMode: .large)
+            .navigationBarTitle(Text("Browse Items"), displayMode: .large)
             .navigationBarItems(trailing:
                                     Button(action: {
                                         self.showItems.toggle()
@@ -26,16 +27,15 @@ struct ItemsView: View {
         }
     }
 }
+
 /*
-struct HorizontalGrid: View {
-    var body: some View {
-        VStack(alignment: .leading, content: {
-            Text("Recipe")
-                .font(.title).bold()
-                .padding(.leading, 22)
-                .padding(.top, 10)
-        })
-    }
+struct ModelsByCat: View {
+    let models = Models()
     
+    var body: some View {
+        ForEach(ModelCategory.allCases, id: \.self) {
+            category in
+        }
+    }
 }
 */

@@ -1,20 +1,23 @@
 [
   {
-    "step": 1,
-    "text": "BREAD",
     "id": 1,
-    "imageName": "bread"
+    "name": "BREAD",
+    "category": 0,
+    "imageName": "bread",
+    "recipe": 1
   },
   {
-    "step": 2,
-    "text": "CHEESE"
-    "id": 1,
-    "imageName": "cheese"
+    "id": 2,
+    "name": "CHEESE",
+    "category": 0,
+    "imageName": "slice_cheese",
+    "recipe": 1
   },
   {
-    "step": 3,
-    "text": "PAN/COOKTOP"
-    "id": 1,
-    "imageName": "pan"
+    "id": 3,
+    "name": "PAN",
+    "category": 1,
+    "imageName": "pan",
+    "recipe": 1
   }
 ]

@@ -8,7 +8,7 @@
 import SwiftUI
 import Foundation
 
-let recipeItems: [Recipe] = processJSONData(filename: "recipeData.json")
+let ItemsDB: [Items] = processJSONData(filename: "itemsData.json")
 
 private func processJSONData<T: Decodable>(filename: String) -> T {
   let data: Data
@@ -31,18 +31,18 @@ private func processJSONData<T: Decodable>(filename: String) -> T {
   }
 }
 
-final class KitchenImageStore {
+final class ItemsImageStore {
     typealias _ImageDictionary = [String: CGImage]
     fileprivate var images: _ImageDictionary = [:]
 
     fileprivate static var scale = 2
     
-    static var shared = KitchenImageStore()
+    static var shared = ItemsImageStore()
     
     func image(name: String) -> Image {
         let index = _guaranteeImage(name: name)
         
-        return Image(images.values[index], scale: CGFloat(KitchenImageStore.scale), label: Text(verbatim: name))
+        return Image(images.values[index], scale: CGFloat(ItemsImageStore.scale), label: Text(verbatim: name))
     }
 
     static func loadPNGImage(name: String) -> CGImage {
@@ -59,7 +59,7 @@ final class KitchenImageStore {
     fileprivate func _guaranteeImage(name: String) -> _ImageDictionary.Index {
         if let index = images.index(forKey: name) { return index }
         
-        images[name] = KitchenImageStore.loadPNGImage(name: name)
+        images[name] = ItemsImageStore.loadPNGImage(name: name)
         return images.index(forKey: name)!
     }
 }
