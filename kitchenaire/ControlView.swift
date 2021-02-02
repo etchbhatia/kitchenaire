@@ -34,16 +34,17 @@ struct ControlButtonBar: View {
                 print("Button 1 pressed.")
                 self.showRecipes.toggle()
             }.sheet(isPresented: $showRecipes, content: {
-                RecipeListView(showRecipes:$showRecipes, showItems:$showItems)
+                RecipeListView(showRecipes:$showRecipes)
             })
             /// Find Items Button
             Spacer()
             ControlButton(systemIconName: "2.circle.fill") {
                 print("Button 2 pressed.")
                 self.showItems.toggle()
-            }.sheet(isPresented: $showItems, content: {
-                ItemsListView(showItems:$showItems)
-            })
+            }
+//            .sheet(isPresented: $showItems, content: {
+//                ItemsListView(showItems:$showItems)
+//            })
             /// Instructions Button
             Spacer()
             ControlButton(systemIconName: "3.circle.fill") {

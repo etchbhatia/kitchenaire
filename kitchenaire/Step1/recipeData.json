@@ -1,27 +1,160 @@
 [
   {
-    "name": "Grilled Cheese Sandwich",
     "id": 1,
-    "imageName": "grilled"
+    "name": "Grilled Cheese Sandwich",
+    "imageName": "grilled",
+    "items":
+    [
+      {
+        "id": 1,
+        "name": "BREAD",
+        "category": 0,
+        "imageName": "bread",
+        "registered": false
+      },
+      {
+        "id": 2,
+        "name": "CHEESE",
+        "category": 0,
+        "imageName": "slice_cheese",
+        "registered": false
+      },
+      {
+        "id": 3,
+        "name": "PAN",
+        "category": 1,
+        "imageName": "pan",
+        "registered": false
+      }
+    ],
+    "instructions":
+    [
+      {
+        "id": 1,
+        "text": "Take 2 slices of bread",
+        "category": 0,
+        "imageName": "bread"
+      },
+      {
+        "id": 2,
+        "text": "Warm the pan and put butter",
+        "category": 1,
+        "imageName": "pan"
+      },
+      {
+        "id": 3,
+        "text": "Put 2 slices of cheese on bread",
+        "category": 0,
+        "imageName": "slice_cheese"
+      },
+      {
+        "id": 4,
+        "text": "Grill the bread on the warm pan, 3 minutes each side",
+        "category": 1,
+        "imageName": "pan"
+      },
+      {
+        "id": 5,
+        "text": "Your sandwich is ready",
+        "category": 1,
+        "imageName": "grilled"
+      }
+    ]
   },
   {
-    "name": "Instant Coffee",
     "id": 2,
-    "imageName": "coffee"
+    "name": "Instant Coffee",
+    "imageName": "coffee",
+    "items":
+    [
+      {
+        "id": 1,
+        "name": "COFFEE",
+        "category": 0,
+        "imageName": "coffee",
+        "registered": false
+      }
+    ],
+    "instructions":
+    [
+      {
+        "id": 1,
+        "text": "Your coffee is ready",
+        "category": 1,
+        "imageName": "coffee"
+      }
+    ]
   },
   {
-    "name": "Open Egg Sandwich",
     "id": 3,
-    "imageName": "egg_sandwich"
+    "name": "Open Egg Sandwich",
+    "imageName": "egg_sandwich",
+    "items":
+    [
+      {
+        "id": 1,
+        "name": "BREAD",
+        "category": 0,
+        "imageName": "bread",
+        "registered": false
+      }
+    ],
+    "instructions":
+    [
+      {
+        "id": 1,
+        "text": "Your sandwich is ready",
+        "category": 1,
+        "imageName": "coffee"
+      }
+    ]
   },
   {
-    "name": "Indian Chai Tea",
     "id": 4,
-    "imageName": "tea"
+    "name": "Indian Chai Tea",
+    "imageName": "tea",
+    "items":
+    [
+      {
+        "id": 1,
+        "name": "TEA",
+        "category": 0,
+        "imageName": "tea",
+        "registered": false
+      }
+    ],
+    "instructions":
+    [
+      {
+        "id": 1,
+        "text": "Your tea is ready",
+        "category": 1,
+        "imageName": "tea"
+      }
+    ]
   },
   {
-    "name": "Chicken Noodle Soup",
     "id": 5,
-    "imageName": "soup"
+    "name": "Chicken Noodle Soup",
+    "imageName": "soup",
+    "items":
+    [
+      {
+        "id": 1,
+        "name": "PAN",
+        "category": 1,
+        "imageName": "pan",
+        "registered": false
+      }
+    ],
+    "instructions":
+    [
+      {
+        "id": 1,
+        "text": "Your soup is ready",
+        "category": 1,
+        "imageName": "soup"
+      }
+    ]
   }
 ]

@@ -14,6 +14,15 @@
 		447AEE5A25C1DAF6007AB4B4 /* RecipeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447AEE5925C1DAF6007AB4B4 /* RecipeButton.swift */; };
 		447AEE5D25C22A47007AB4B4 /* recipesDB.json in Resources */ = {isa = PBXBuildFile; fileRef = 447AEE5C25C22A47007AB4B4 /* recipesDB.json */; };
 		447AEE7425C36508007AB4B4 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447AEE7325C36508007AB4B4 /* ItemView.swift */; };
+		447AEE7B25C3F750007AB4B4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447AEE7A25C3F750007AB4B4 /* SettingsView.swift */; };
+		447AEE7E25C3F76D007AB4B4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447AEE7D25C3F76D007AB4B4 /* HomeView.swift */; };
+		447AEE8125C3FA86007AB4B4 /* Screen1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447AEE8025C3FA86007AB4B4 /* Screen1View.swift */; };
+		447AEE8525C47B39007AB4B4 /* View1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447AEE8425C47B39007AB4B4 /* View1.swift */; };
+		447AEE8825C47B4E007AB4B4 /* View2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447AEE8725C47B4E007AB4B4 /* View2.swift */; };
+		447AEE8B25C49DD7007AB4B4 /* InstrView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447AEE8A25C49DD7007AB4B4 /* InstrView.swift */; };
+		447AEE8E25C4A09F007AB4B4 /* Instr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447AEE8D25C4A09F007AB4B4 /* Instr.swift */; };
+		447AEE9125C4CE6D007AB4B4 /* FindItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447AEE9025C4CE6D007AB4B4 /* FindItemView.swift */; };
+		447AEE9425C4E554007AB4B4 /* IteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447AEE9325C4E554007AB4B4 /* IteView.swift */; };
 		44826AA725BE540600F1A7F9 /* FocusARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44826AA625BE540600F1A7F9 /* FocusARView.swift */; };
 		44826AAA25BE558300F1A7F9 /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44826AA925BE558300F1A7F9 /* ControlView.swift */; };
 		44869C0825BEAEC300E0C42D /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44869C0725BEAEC300E0C42D /* RecipeView.swift */; };
@@ -36,6 +45,8 @@
 		44A36EDC25BBC04B0005968B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44A36EDB25BBC04B0005968B /* Assets.xcassets */; };
 		44A36EDF25BBC04B0005968B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44A36EDE25BBC04B0005968B /* Preview Assets.xcassets */; };
 		44A36EE225BBC04B0005968B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44A36EE025BBC04B0005968B /* LaunchScreen.storyboard */; };
+		44BA2D9425C8D848003AAC3F /* CustomBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BA2D9325C8D848003AAC3F /* CustomBox.swift */; };
+		44BA2DA825C93FF2003AAC3F /* leftArrow.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 44BA2DA725C93FF2003AAC3F /* leftArrow.rcproject */; };
 		B368C0ECB2F19FDF47212D84 /* Pods_kitchenaire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE7F6157350CE038DCE5F037 /* Pods_kitchenaire.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +58,15 @@
 		447AEE5925C1DAF6007AB4B4 /* RecipeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeButton.swift; sourceTree = "<group>"; };
 		447AEE5C25C22A47007AB4B4 /* recipesDB.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = recipesDB.json; sourceTree = "<group>"; };
 		447AEE7325C36508007AB4B4 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		447AEE7A25C3F750007AB4B4 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		447AEE7D25C3F76D007AB4B4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		447AEE8025C3FA86007AB4B4 /* Screen1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen1View.swift; sourceTree = "<group>"; };
+		447AEE8425C47B39007AB4B4 /* View1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View1.swift; sourceTree = "<group>"; };
+		447AEE8725C47B4E007AB4B4 /* View2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View2.swift; sourceTree = "<group>"; };
+		447AEE8A25C49DD7007AB4B4 /* InstrView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrView.swift; sourceTree = "<group>"; };
+		447AEE8D25C4A09F007AB4B4 /* Instr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instr.swift; sourceTree = "<group>"; };
+		447AEE9025C4CE6D007AB4B4 /* FindItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindItemView.swift; sourceTree = "<group>"; };
+		447AEE9325C4E554007AB4B4 /* IteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IteView.swift; sourceTree = "<group>"; };
 		44826AA625BE540600F1A7F9 /* FocusARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusARView.swift; sourceTree = "<group>"; };
 		44826AA925BE558300F1A7F9 /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
 		44869C0725BEAEC300E0C42D /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
@@ -71,6 +91,8 @@
 		44A36EDE25BBC04B0005968B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		44A36EE125BBC04B0005968B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44A36EE325BBC04B0005968B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44BA2D9325C8D848003AAC3F /* CustomBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBox.swift; sourceTree = "<group>"; };
+		44BA2DA725C93FF2003AAC3F /* leftArrow.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = leftArrow.rcproject; sourceTree = "<group>"; };
 		B9285D2BEF6F82C92B45C722 /* Pods-kitchenaire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kitchenaire.release.xcconfig"; path = "Target Support Files/Pods-kitchenaire/Pods-kitchenaire.release.xcconfig"; sourceTree = "<group>"; };
 		BE7F6157350CE038DCE5F037 /* Pods_kitchenaire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kitchenaire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE05BCB4F413B4A2D4055DAE /* Pods-kitchenaire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kitchenaire.debug.xcconfig"; path = "Target Support Files/Pods-kitchenaire/Pods-kitchenaire.debug.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +148,7 @@
 		44869C1525BF9C3500E0C42D /* Step3 */ = {
 			isa = PBXGroup;
 			children = (
+				44BA2DA725C93FF2003AAC3F /* leftArrow.rcproject */,
 				44826AA625BE540600F1A7F9 /* FocusARView.swift */,
 			);
 			path = Step3;
@@ -154,6 +177,16 @@
 			children = (
 				44A36ED525BBC0470005968B /* AppDelegate.swift */,
 				44A36ED725BBC0470005968B /* ContentView.swift */,
+				44BA2D9325C8D848003AAC3F /* CustomBox.swift */,
+				447AEE8425C47B39007AB4B4 /* View1.swift */,
+				447AEE8725C47B4E007AB4B4 /* View2.swift */,
+				447AEE7A25C3F750007AB4B4 /* SettingsView.swift */,
+				447AEE8025C3FA86007AB4B4 /* Screen1View.swift */,
+				447AEE7D25C3F76D007AB4B4 /* HomeView.swift */,
+				447AEE8A25C49DD7007AB4B4 /* InstrView.swift */,
+				447AEE9025C4CE6D007AB4B4 /* FindItemView.swift */,
+				447AEE8D25C4A09F007AB4B4 /* Instr.swift */,
+				447AEE9325C4E554007AB4B4 /* IteView.swift */,
 				44869C1325BF9BD100E0C42D /* Step1 */,
 				44826AA925BE558300F1A7F9 /* ControlView.swift */,
 				44869C1425BF9C1800E0C42D /* Step2 */,
@@ -340,16 +373,27 @@
 				44A36ED625BBC0470005968B /* AppDelegate.swift in Sources */,
 				446B944225C0B5F1005B5ADC /* ItemsRow.swift in Sources */,
 				44826AA725BE540600F1A7F9 /* FocusARView.swift in Sources */,
+				447AEE7E25C3F76D007AB4B4 /* HomeView.swift in Sources */,
+				447AEE8E25C4A09F007AB4B4 /* Instr.swift in Sources */,
 				446B944525C0B664005B5ADC /* Items.swift in Sources */,
 				44869C0825BEAEC300E0C42D /* RecipeView.swift in Sources */,
 				44869C2E25BFA24F00E0C42D /* RecipeAPI.swift in Sources */,
+				44BA2D9425C8D848003AAC3F /* CustomBox.swift in Sources */,
+				44BA2DA825C93FF2003AAC3F /* leftArrow.rcproject in Sources */,
 				44A36EDA25BBC0470005968B /* Experience.rcproject in Sources */,
+				447AEE7B25C3F750007AB4B4 /* SettingsView.swift in Sources */,
 				446B943F25C0B573005B5ADC /* ItemsListView.swift in Sources */,
+				447AEE9425C4E554007AB4B4 /* IteView.swift in Sources */,
 				44869C2B25BFA1AF00E0C42D /* RecipeListView.swift in Sources */,
 				44826AAA25BE558300F1A7F9 /* ControlView.swift in Sources */,
 				447AEE3425C11469007AB4B4 /* ItemsAPI.swift in Sources */,
+				447AEE8825C47B4E007AB4B4 /* View2.swift in Sources */,
+				447AEE9125C4CE6D007AB4B4 /* FindItemView.swift in Sources */,
+				447AEE8125C3FA86007AB4B4 /* Screen1View.swift in Sources */,
+				447AEE8B25C49DD7007AB4B4 /* InstrView.swift in Sources */,
 				447AEE7425C36508007AB4B4 /* ItemView.swift in Sources */,
 				44869C3A25BFA74200E0C42D /* Recipe.swift in Sources */,
+				447AEE8525C47B39007AB4B4 /* View1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

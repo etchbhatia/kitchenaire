@@ -9,25 +9,16 @@ import Foundation
 import SwiftUI
 
 // MARK: - Recipe
-/*
 struct Recipe: Decodable, Hashable, Identifiable {
     var id: Int
     var name, imageName: String
-    var itemsCount, instructionsCount: Int
-    var items: [Item]
-    var instructions: [Instruction]
-}
-*/
-
-struct Recipe: Decodable, Hashable, Identifiable {
-    var id: Int
-    var name, imageName: String
-    var items: [Item]?
-    var instructions: [Instruction]?
+    var items: [Item] = []
+    var instructions: [Instruction] = []
 
 
     // MARK: - Item
-    struct Item: Decodable, Hashable {
+    struct Item: Decodable, Hashable, Identifiable {
+        var id: Int
         var name: String
         var category: Int
         var imageName: String
@@ -36,10 +27,37 @@ struct Recipe: Decodable, Hashable, Identifiable {
 
 
     // MARK: - Instruction
-    struct Instruction: Decodable, Hashable {
+    struct Instruction: Decodable, Hashable, Identifiable {
+        var id: Int
         var text: String
         var category: Int
         var imageName: String
+    }
+    
+    func getItems() -> [Item] {
+        return self.items
+    }
+    
+    func getInstructions() -> [Instruction] {
+        return self.instructions
+    }
+    
+    func getCategory(category: Int) -> String {
+        var locate: String {
+            get {
+                switch category {
+                case 0:
+                    return "Fridge"
+                case 1:
+                    return "Cooktop"
+                case 2:
+                    return "Condiments"
+                default:
+                    return ""
+                }
+            }
+        }
+        return locate
     }
 }
 
@@ -57,7 +75,7 @@ extension Recipe.Item {
     }
 }
 
-
+/*
 extension Recipe.Item {
     var locate: String {
         get {
@@ -75,7 +93,7 @@ extension Recipe.Item {
     }
 }
 
-/*
+
 struct ItemArray: Decodable {
     var array: [Item]
 }

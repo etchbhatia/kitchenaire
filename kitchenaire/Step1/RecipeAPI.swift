@@ -8,7 +8,7 @@
 import SwiftUI
 import Foundation
 
-let recipeItems: [Recipe] = processJSONData(filename: "recipesDB.json")
+let recipeItems: [Recipe] = processJSONData(filename: "recipeData.json")
 
 private func processJSONData<T: Decodable>(filename: String) -> T {
   let data: Data
